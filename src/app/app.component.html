@@ -1,0 +1,7 @@
+Loading... {{loading$ | async}}
+
+<ul>
+  @for(item of department$ |async; track $index){
+    <li>{{item.departmentName}}</li>
+  }
+</ul>
